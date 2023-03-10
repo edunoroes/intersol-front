@@ -1,0 +1,56 @@
+.Table{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 45px;
+}
+
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  border-radius: 30px !important;
+}
+
+.MuiTableRow-root > * {
+  padding: 10px;
+}
+
+.MuiTableRow-root.MuiTableRow-head > * {
+  font-weight: bold !important;
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.css-1ex1afd-MuiTableCell-root{
+  font-family: 'Nunito', sans-serif;
+  color: #747488;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.Table td,
+th  {
+  border: none !important;
+  font-family: 'Nunito', sans-serif !important;
+  color: #747488 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.Table:first-child {
+  border-radius: 0.7rem !important;
+}
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 4px;
+  width: 6.1875rem;
+  height: 1.1875rem;
+  background: #EEF6F6;
+  border-radius: 8px;
+}
