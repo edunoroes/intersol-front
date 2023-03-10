@@ -8,13 +8,13 @@ function Modal(props) {
     return null;
   }
 
-  async function CriarConta() {
-    const { agencia, numeroConta } = props;
+  async function CriarAgencia() {
+    const { endereco, numeroAgencia } = props;
 
     try {
       const { data } = await api.post(
-        "/conta",
-        { agencia_bancaria: agencia, numero_conta: numeroConta },
+        "/agencia",
+        { endereco, numero_agencia: numeroAgencia},
         {
           headers: {
             authorization: `Bearer ${getItem("token")}`,
@@ -27,7 +27,7 @@ function Modal(props) {
 
   return (
     <div className="modal">
-      <form onSubmit={CriarConta} className="modal-content">
+      <form onSubmit={CriarAgencia} className="modal-content">
         {props.children}
         <button>Confirmar</button>
         <button onClick={props.onClose}>Cancelar</button>

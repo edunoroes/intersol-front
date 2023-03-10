@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import api from "../../services/api";
 import { clearItem, getItem } from "../../utils/storage";
 import CriarConta from "../CriarConta/CriarConta";
+import CriarAgencia from "../CriarAgencia/CriarAgencia";
 
 function ContainerInsideExample() {
   const [registrosConta, setRegistrosConta] = useState();
@@ -49,6 +50,7 @@ function ContainerInsideExample() {
           <button onClick={logout}>Sair</button>
         </div>
       )}
+      <CriarAgencia/>
     </>
   );
 }
